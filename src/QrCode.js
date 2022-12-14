@@ -22,7 +22,7 @@ const QrCode = () => {
       handleStop();
     };
     html5QrCode.start(
-      { facingMode: { exact: "user" } },
+      { facingMode: "environment" },
       qrConfig,
       qrCodeSuccessCallback
     );
